@@ -40,7 +40,7 @@ RUN ["df","-h"]
 COPY ./Code/ /var/www/html/Code/
 # COPY ./apache2.conf /etc/apache2/
 COPY ./VirtualHosts/000-default.conf /etc/apache2/sites-available/
-COPY ./VirtualHosts/default-ssl.conf /etc/apache2/sites-available/
+# COPY ./VirtualHosts/default-ssl.conf /etc/apache2/sites-available/
 
 # copy requirements file
 #COPY ./Code/requirements.txt /Code/	
