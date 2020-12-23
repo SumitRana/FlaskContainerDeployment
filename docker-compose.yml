@@ -1,12 +1,12 @@
 version: "3.3"
 services:
   backendApp:
-    image: "AppImage:v1.0"
+    image: "flaskproto:latest"
     tty: true
     deploy:
       replicas: 1
     ports:
-      - 80:80
+      - 8080:80
     volumes:
       - backendLogs:/var/log/apache2
   
